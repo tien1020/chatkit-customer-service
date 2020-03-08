@@ -32,7 +32,7 @@ class Support extends Component {
         });
 
         const chatManager = new Chatkit.ChatManager({
-          instanceLocator: "<your chatkit instance locator>",
+          instanceLocator: "v1:us1:cedb9a5e-1dff-4a33-b63d-cb6a32da1b62",
           userId,
           tokenProvider
         });
