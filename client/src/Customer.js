@@ -67,10 +67,10 @@ class Customer extends Component {
       alert("Invalid userId");
     } else {
       axios
-        .post("http://localhost:5200/users", { userId })
+        .post("http://10.1.10.127:5200/users", { userId })
         .then(() => {
           const tokenProvider = new Chatkit.TokenProvider({
-            url: "http://localhost:5200/authenticate"
+            url: "http://10.1.10.127:5200/authenticate"
           });
 
           const chatManager = new Chatkit.ChatManager({

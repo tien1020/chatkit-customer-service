@@ -13,7 +13,7 @@ const ChatWidget = props => {
     <section className="chat">
       <div className="chat-widget">
         <header className="chat-header">
-          <h2>Got Questions? Chat with us</h2>
+          <h2>Lets chat.</h2>
         </header>
         <section className="chat-body">{ChatSession}</section>
 
@@ -22,7 +22,7 @@ const ChatWidget = props => {
             className="message-input"
             autoFocus
             name="newMessage"
-            placeholder="Compose your message and hit ENTER to send"
+            placeholder="Write a message then click ENTER"
             onChange={handleInput}
             value={newMessage}
           />
