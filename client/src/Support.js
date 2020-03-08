@@ -25,10 +25,10 @@ class Support extends Component {
     const userId = "support";
 
     axios
-      .post("http://localhost:5200/users", { userId })
+      .post("/users", { userId })
       .then(() => {
         const tokenProvider = new Chatkit.TokenProvider({
-          url: "http://localhost:5200/authenticate"
+          url: "/authenticate"
         });
 
         const chatManager = new Chatkit.ChatManager({
