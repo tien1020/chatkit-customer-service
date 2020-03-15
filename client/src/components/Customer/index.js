@@ -1,8 +1,8 @@
-import React, { Component } from "react";
-import axios from "axios";
-import Chatkit from "@pusher/chatkit-client";
-import Spinner from "react-spinkit";
-import Dialog from "./Dialog";
+import React, { Component } from "./node_modules/react";
+import axios from "./node_modules/axios";
+import Chatkit from "./node_modules/@pusher/chatkit-client";
+import Spinner from "./node_modules/react-spinkit";
+import Dialog from "../Dialog";
 import ChatWidget from "./ChatWidget";
 import { handleInput, sendMessage, connectToRoom } from "./sharedMethods";
 
@@ -67,10 +67,10 @@ class Customer extends Component {
       alert("Invalid userId");
     } else {
       axios
-        .post("http://10.1.10.127:5200/users", { userId })
+        .post("/users", { userId })
         .then(() => {
           const tokenProvider = new Chatkit.TokenProvider({
-            url: "http://10.1.10.127:5200/authenticate"
+            url: "/authenticate"
           });
 
           const chatManager = new Chatkit.ChatManager({

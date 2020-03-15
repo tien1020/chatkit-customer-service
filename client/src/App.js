@@ -1,7 +1,7 @@
 import { Route } from "react-router-dom";
 import React, { Component } from "react";
-import Customer from "./Customer";
-import Support from "./Support";
+import Customer from "./components/Customer";
+import Support from "./components/Support";
 
 import "./normalize.css";
 import "./skeleton.css";
