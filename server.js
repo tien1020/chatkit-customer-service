@@ -8,6 +8,9 @@ const mongoose = require("mongoose");
 const routes = require("./routes");
 const app = express();
 const PORT = process.env.PORT || 3001;
+var server = new WebpackDevServer(compiler, {
+  disableHostCheck: true
+});
  
 
 app.use(express.urlencoded({ extended: true }));
@@ -67,6 +70,6 @@ if (process.env.NODE_ENV === "production") {
     mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/lifechat",  {useNewUrlParser: true, useUnifiedTopology: true});
  
 
-    const server = app.listen(app.get('port'), () => {
+    server = app.listen(app.get('port'), () => {
       console.log(`Express running → PORT ${server.address().port}`);
     });
