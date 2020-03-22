@@ -8,8 +8,8 @@ import "./normalize.css";
 import "./skeleton.css";
 import "./App.css";
 
-function App {
-  render() {
+function App() {
+  //render() {
     return (
       <BrowserRouter>
       <div className="App">
@@ -21,7 +21,7 @@ function App {
       </div>
       </BrowserRouter>
     );
-  }
+  //}
 }
 
 export default App;
