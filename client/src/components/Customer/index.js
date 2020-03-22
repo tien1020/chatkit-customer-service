@@ -1,10 +1,10 @@
 import React, { Component } from "./node_modules/react";
-import axios from "./node_modules/axios";
-import Chatkit from "./node_modules/@pusher/chatkit-client";
-import Spinner from "./node_modules/react-spinkit";
+import axios from "axios";
+import Chatkit from "@pusher/chatkit-client";
+import Spinner from "react-spinkit";
 import Dialog from "../Dialog";
-    import ChatWidget from "../ChatWidget";
-    import Jumbotron from "../Jumbotron"
+import ChatWidget from "../ChatWidget";
+import Jumbotron from "../Jumbotron";
 
     import { handleInput, sendMessage, connectToRoom } from "../../sharedMethods"
 
@@ -108,6 +108,7 @@ class Customer extends Component {
     } = this.state;
 
     return (
+      <Jumbotron>
       <div className="customer-chat">
         <h1>Imaginary Service</h1>
         <p>Need help? Chat with us</p>
@@ -136,6 +137,7 @@ class Customer extends Component {
           />
         ) : null}
       </div>
+      </Jumbotron>
     );
   }
 }

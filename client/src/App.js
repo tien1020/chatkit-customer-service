@@ -10,10 +10,16 @@ import "./App.css";
 class App extends Component {
   render() {
     return (
+      <BrowserRouter>
       <div className="App">
+      <Switch>
         <Route exact path="/" render={() => <Customer />} />
         <Route exact path="/support" render={() => <Support />} />
+      
+      </Switch>
+      <FooterBottom></FooterBottom>
       </div>
+      </BrowserRouter>
     );
   }
 }

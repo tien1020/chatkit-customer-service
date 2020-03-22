@@ -1,5 +1,5 @@
-import React from "./node_modules/react";
-import Proptypes from "./node_modules/prop-types";
+import React from "react";
+import Proptypes from "prop-types";
 
 const ChatWidget = props => {
   const { newMessage, sendMessage, handleInput, currentUser, messages } = props;
