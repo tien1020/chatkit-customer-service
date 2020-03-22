@@ -1,5 +1,5 @@
 import React from "react";
-import Proptypes from "prop-types";
+import proptypes from "prop-types";
 
 import "./Dialog.css";
 
