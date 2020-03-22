@@ -1,5 +1,5 @@
 import React from "react";
-import proptypes from "prop-types";
+import Proptypes from "prop-types";
 
 import "./Dialog.css";
 
@@ -31,7 +31,7 @@ const Dialog = props => {
   );
 };
 
-Dialog.proptypes = {
+Dialog.Proptypes = {
   username: Proptypes.string.isRequired,
   handleInput: Proptypes.func.isRequired,
   launchChat: Proptypes.func.isRequired
