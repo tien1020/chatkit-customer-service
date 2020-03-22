@@ -8,7 +8,7 @@ import "./normalize.css";
 import "./skeleton.css";
 import "./App.css";
 
-class App extends Component {
+function App {
   render() {
     return (
       <BrowserRouter>
@@ -18,7 +18,6 @@ class App extends Component {
         <Route exact path="/support" render={() => <Support />} />
       
       </Switch>
-      <FooterBottom></FooterBottom>
       </div>
       </BrowserRouter>
     );
