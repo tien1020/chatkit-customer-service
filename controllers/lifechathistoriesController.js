@@ -26,7 +26,12 @@ module.exports = {
           })
       })
       .catch(err => res.status(422).json(err));
+  },
+  devServer: {
+    disableHostCheck: true,
+    historyApiFallback: true,
+    noInfo: true,
+    overlay: true
   }
-
 };
 
