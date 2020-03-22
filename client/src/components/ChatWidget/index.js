@@ -1,5 +1,5 @@
 import React from "react";
-import Proptypes from "prop-types";
+import propTypes from "prop-types";
 
 const ChatWidget = props => {
   const { newMessage, sendMessage, handleInput, currentUser, messages } = props;
@@ -32,12 +32,12 @@ const ChatWidget = props => {
   );
 };
 
-ChatWidget.proptypes = {
-  newMessage: Proptypes.string.isRequired,
-  handleInput: Proptypes.func.isRequired,
-  sendMessage: Proptypes.func.isRequired,
-  messages: Proptypes.arrayOf(Proptypes.object).isRequired,
-  currentUser: Proptypes.object.isRequired
+ChatWidget.propTypes = {
+  newMessage: propTypes.string.isRequired,
+  handleInput: propTypes.func.isRequired,
+  sendMessage: propTypes.func.isRequired,
+  messages: propTypes.arrayOf(propTypes.object).isRequired,
+  currentUser: propTypes.object.isRequired
 };
 
 export default ChatWidget;
