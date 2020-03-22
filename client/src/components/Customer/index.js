@@ -4,6 +4,8 @@ import Chatkit from "./node_modules/@pusher/chatkit-client";
 import Spinner from "./node_modules/react-spinkit";
 import Dialog from "../Dialog";
     import ChatWidget from "../ChatWidget";
+    import Jumbotron from "../Jumbotron"
+
     import { handleInput, sendMessage, connectToRoom } from "../../sharedMethods"
 
 
