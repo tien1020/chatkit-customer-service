@@ -64,7 +64,7 @@ if (process.env.NODE_ENV === "production") {
     app.use(routes);    
     app.set('port', process.env.PORT || 3001);
 
-    //mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/lifechat",  {useNewUrlParser: true, useUnifiedTopology: true});
+    mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/lifechat",  {useNewUrlParser: true, useUnifiedTopology: true});
  
 
     const server = app.listen(app.get('port'), () => {
