@@ -6,7 +6,7 @@ import Dialog from "../Dialog";
 import ChatWidget from "../ChatWidget";
 import Jumbotron from "../Jumbotron";
 
-    import { handleInput, sendMessage, connectToRoom } from "../sharedMethod"
+    import { handleInput, sendMessage, connectToRoom } from "../../sharedMethods"
 
 
 class Customer extends Component {
