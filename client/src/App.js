@@ -1,5 +1,6 @@
-import { Route } from "react-router-dom";
-import React, { Component } from "react";
+import React from "react";
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
+
 import Customer from "./components/Customer";
 import Support from "./components/Support";
 
