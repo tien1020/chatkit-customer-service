@@ -1,11 +1,6 @@
-// module.exports = {
-//     lifechathistory: require("./lifechathistory"),
-//     Patient: require("./Patient"),  
-//     Book: require("./book"),
+module.exports = {
+    lifechathistory: require("./lifechathistory"),
+ 
    
-//     emergency: require("./emergency"),
-   
-//     profile: require("./profile")
-   
-//   };
+  };
   
